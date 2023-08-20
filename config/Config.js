@@ -3,5 +3,6 @@ module.exports = Object.freeze({
     ACCOUNT : '',
     PASSWORD : '',
     QUESTION : '',
+    customquest: '',//当QUESTION的值为-1时填写
     ANSWER : '',
 });
