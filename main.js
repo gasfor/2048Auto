@@ -41,6 +41,9 @@ async function main() {
       await page.select("select[name='question']", Config.QUESTION);
     }
     if (Config.ANSWER) {
+      if(Config.QUESTION=='-1'){
+        await page.type("input[name='customquest']", Config.customquest);
+      }
       await page.type("input[name='answer']", Config.ANSWER);
     }
     await (await page.$(".btn")).click();
